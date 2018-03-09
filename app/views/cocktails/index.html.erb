@@ -2,4 +2,5 @@
 
 <% @cocktails.each do |cocktail| %>
   <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+  <h3><%= link_to 'Delete', cocktail_path(cocktail), method: :delete %></h3>
 <% end %>
